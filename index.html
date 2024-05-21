@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculadora - JavaScript</title>
+    </head>
+    <body>
+
+        <div id="container">
+            <h1>Calculadora</h1>
+            <div>
+                <label for="valorDois">Valor 1:</label>
+                <input type="number" id="valorUm">
+            </div>
+            <div>
+                <label for="valorDois">Valor 2:</label>
+                <input type="number" id="valorDois">
+            </div>
+            <div>
+                <label>Operadores</label>
+                <button class="evento" onclick="somar()">+</button>
+                <button class="evento" onclick="subtrair()">-</button>
+                <button class="evento" onclick="multiplicar()">*</button>
+                <button class="evento" onclick="dividir()">/</button>
+            </div>
+            <div>
+                <label>Resultado:</label>
+                <input type="text" id="resultado" disabled>
+            </div>
+            <button onclick="zerar()">Zerar</button>
+        </div>
+        
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
