@@ -1,35 +1,26 @@
 let resultadoTela = document.getElementById('resultado');
 
-function somar() {
+function operacao(opcao) {
     let valorUm = parseInt(document.getElementById('valorUm').value);
     let valorDois = parseInt(document.getElementById('valorDois').value);
-    
-    let resultado = valorUm + valorDois;
-    resultadoTela.value = resultado;
-}
-
-function subtrair() {
-    let valorUm = parseInt(document.getElementById('valorUm').value);
-    let valorDois = parseInt(document.getElementById('valorDois').value);    
-   
-    let resultado = valorUm - valorDois;
-    resultadoTela.value = resultado;
-}
-
-function multiplicar() {
-    let valorUm = parseInt(document.getElementById('valorUm').value);
-    let valorDois = parseInt(document.getElementById('valorDois').value);
-
-    let resultado = valorUm * valorDois;
-    resultadoTela.value = resultado;
-}
-
-function dividir() {
-    let valorUm = parseInt(document.getElementById('valorUm').value);
-    let valorDois = parseInt(document.getElementById('valorDois').value);
-    
-    let resultado = valorUm / valorDois;
-    resultadoTela.value = resultado;
+    switch (opcao) {
+        case 1:
+            let resultadoSoma = valorUm + valorDois;
+            resultadoTela.value = resultadoSoma;
+        break;
+        case 2:
+            let resultadoSubtracao = valorUm - valorDois;
+            resultadoTela.value = resultadoSubtracao;
+        break;
+        case 3:
+            let resultadoMultiplicacao = valorUm * valorDois;
+            resultadoTela.value = resultadoMultiplicacao;
+        break;
+        case 4:
+            let resultado = valorUm / valorDois;
+            resultadoTela.value = resultado;
+        break;
+    }
 }
 
 function zerar() {
