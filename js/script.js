@@ -17,8 +17,11 @@ function operacao(opcao) {
             resultadoTela.value = resultadoMultiplicacao;
         break;
         case 4:
-            let resultado = valorUm / valorDois;
-            resultadoTela.value = resultado;
+            let resultadoDivisao = valorUm / valorDois;
+            if (valorUm <  1  && valorDois < 1 ) {
+                window.alert('Não é possível realizar essa operação.');
+            }
+            resultadoTela.value = resultadoDivisao.toFixed(5);
         break;
     }
 }
