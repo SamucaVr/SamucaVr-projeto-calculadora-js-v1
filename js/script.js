@@ -18,10 +18,12 @@ function operacao(opcao) {
         break;
         case 4:
             let resultadoDivisao = valorUm / valorDois;
-            if (valorUm <  1  && valorDois < 1 ) {
-                window.alert('Não é possível realizar essa operação.');
+            if (valorDois < 1) {
+                window.alert('Não é possível dividir por zero.');
+                resultadoTela.value = '';
+            } else {
+                resultadoTela.value = resultadoDivisao.toFixed(5);
             }
-            resultadoTela.value = resultadoDivisao.toFixed(5);
         break;
     }
 }
